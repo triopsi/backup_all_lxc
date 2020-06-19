@@ -95,7 +95,7 @@ do
     echo "[I] Create image, export as tar"
     if $LXC image export $container-backup-$BACKUPDATE $BACKUPDIR/$BACKUPDATE/$container; then
         echo "[I] Succesfully export $container-backup-$BACKUPDATE to $BACKUPDIR/$BACKUPDATE/$container"
-        ls -all $BACKUPDIR/$BACKUPDATE/$container
+        ls -all $BACKUPDIR/$BACKUPDATE
     else
         echo "[E] Could not export $container-backup-$BACKUPDATE from container $container"
         errorAndQuit
